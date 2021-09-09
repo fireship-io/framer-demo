@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { stateLogger } from "../../stateLogger";
 import Backdrop from "../Backdrop/index";
 
-const slideIn = {
+const dropIn = {
   hidden: {
     y: "-100vh",
     opacity: 0,
@@ -126,10 +126,10 @@ const Modal = ({ handleClose, text, type }) => {
 
   return (
     <Backdrop onClick={!type === "giphy" ? handleClose : undefined}>
-      {type === "slideIn" && (
+      {type === "dropIn" && (
         <motion.div
           className="modal orange-gradient"
-          variants={slideIn}
+          variants={dropIn}
           initial="hidden"
           animate="visible"
           exit="exit"

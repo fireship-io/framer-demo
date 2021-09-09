@@ -12,7 +12,7 @@ function App() {
   const { modalOpen, close, open } = useModal();
 
   // Modal type
-  const [modalType, setModalType] = useState("slideIn");
+  const [modalType, setModalType] = useState("dropIn");
   const handleType = (e) => setModalType(e.target.value);
 
   // Notifications state
@@ -37,11 +37,11 @@ function App() {
         <SubHeader text="Animated modals" />
 
         <motion.select className="input" onChange={handleType}>
-          <option value="slideIn">Slide in</option>
-          <option value="flip">Flip</option>
-          <option value="newspaper">Newspaper</option>
-          <option value="badSuspension">Bad Suspension</option>
-          <option value="gifYouUp">GIF you up</option>
+          <option value="dropIn">🪂 Drop in</option>
+          <option value="flip">🛹 Flip</option>
+          <option value="newspaper">🗞 Newspaper</option>
+          <option value="badSuspension">🔩 Bad Suspension</option>
+          <option value="gifYouUp">🎸 GIF you up</option>
         </motion.select>
 
         <motion.button
@@ -50,7 +50,7 @@ function App() {
           className="save-button"
           onClick={open}
         >
-          Open modal
+          Launch modal
         </motion.button>
 
         <br />
@@ -67,18 +67,18 @@ function App() {
         <br />
 
         <motion.select className="input" onChange={handleStyle}>
-          <option value="success">Success</option>
-          <option value="warning">Warning</option>
-          <option value="error">Error</option>
-          <option value="light">Light</option>
-          <option value="">Dark</option>
+          <option value="success">✅ Success</option>
+          <option value="warning">⚠️ Warning</option>
+          <option value="error">🛑 Error</option>
+          <option value="light">☀️ Light</option>
+          <option value="">🌙 Dark</option>
         </motion.select>
 
         <br />
 
         <motion.select className="input" onChange={handlePosition}>
-          <option value="bottom">Bottom</option>
-          <option value="top">Top</option>
+          <option value="bottom">👇🏼 Bottom</option>
+          <option value="top">☝🏼 Top</option>
         </motion.select>
 
         <motion.button
@@ -87,7 +87,7 @@ function App() {
           className="add-button"
           onClick={() => setNotifications(add(notifications, text, style))}
         >
-          + Notify me
+          + Stack em up
         </motion.button>
       </motion.main>
 
@@ -115,7 +115,7 @@ function App() {
 const Header = () => (
   <motion.h1 className="pink">
     Framer Motion
-    <span className="light-blue">React</span>
+    <span className="light-blue"> ⚛️ React</span>
   </motion.h1>
 );
 
