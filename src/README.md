@@ -47,7 +47,7 @@ $ npm i framer-motion
 #### Project structure
 
 ```
-react-framer-demo
+framer-demo
 ├── README.md
 ├── node_modules
 ├── package.json
