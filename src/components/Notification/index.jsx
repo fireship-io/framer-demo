@@ -42,9 +42,21 @@ const Notification = ({ notifications, setNotifications, notification }) => {
     }
   };
 
+  const closeOnDrag = (event, info) => {
+    console.log(info)
+    if (info.velocity.x > 0) {
+      handleClose();
+    }
+  }
+
   return (
     <motion.li
       positionTransition
+      drag
+      dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+      dragElastic={0.9}
+      dragTransition={{ bounceStiffness: 600, bounceDamping: 10 }}
+      onDragEnd={closeOnDrag}
       style={styleType()} // Change the style based on style selection
       variants={notificationVariants} // Defined animation states
       whileHover="hover" // Animation on hover gesture

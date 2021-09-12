@@ -19,7 +19,7 @@ const dropIn = {
     },
   },
   exit: {
-    y: "-100vh",
+    y: "100vh",
     opacity: 0,
   },
 };
@@ -125,9 +125,10 @@ const Modal = ({ handleClose, text, type }) => {
   }, []);
 
   return (
-    <Backdrop onClick={!type === "giphy" ? handleClose : undefined}>
+    <Backdrop onClick={handleClose}>
       {type === "dropIn" && (
         <motion.div
+          onClick={(e) => e.stopPropagation()}  // Prevent click from closing modal
           className="modal orange-gradient"
           variants={dropIn}
           initial="hidden"
@@ -141,6 +142,7 @@ const Modal = ({ handleClose, text, type }) => {
 
       {type === "flip" && (
         <motion.div
+          onClick={(e) => e.stopPropagation()}   
           className="modal  orange-gradient"
           variants={flip}
           initial="hidden"
@@ -154,6 +156,7 @@ const Modal = ({ handleClose, text, type }) => {
 
       {type === "newspaper" && (
         <motion.div
+          onClick={(e) => e.stopPropagation()}   
           className="modal orange-gradient"
           variants={newspaper}
           initial="hidden"
@@ -167,6 +170,7 @@ const Modal = ({ handleClose, text, type }) => {
 
       {type === "badSuspension" && (
         <motion.div
+          onClick={(e) => e.stopPropagation()}   
           className="modal orange-gradient"
           variants={badSuspension}
           initial="hidden"

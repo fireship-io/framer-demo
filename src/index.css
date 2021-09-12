@@ -109,10 +109,11 @@ button {
 }
 
 .modal {
+  width: clamp(50%, 700px, 90%);
+  height: min(50%, 300px);
+
   margin: auto;
   padding: 0 2rem;
-  width: calc(90%);
-  height: calc(50%);
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -275,10 +276,10 @@ li {
   button {
     cursor: pointer;
   }
-  .modal {
+  /* .modal {
     width: 750px;
     height: 300px;
-  }
+  } */
   .input,
   input {
     width: calc(25vw);
