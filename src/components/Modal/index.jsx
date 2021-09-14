@@ -186,6 +186,7 @@ const Modal = ({ handleClose, text, type }) => {
       {type === "gifYouUp" && (
         <motion.div
           className="modal"
+          onClick={(e) => e.stopPropagation()}
           style={{
             padding: 0,
             height: "auto",
@@ -216,7 +217,7 @@ const Modal = ({ handleClose, text, type }) => {
             drag
             // src="https://i.giphy.com/media/O5ac76MtFGPHG/giphy.gif"
             // src="https://i.giphy.com/media/jmS6YojdAaYw5z1LHi/giphy.gif"
-            src="https://i.giphy.com/media/kFgzrTt798d2w/giphy.gif"
+            src="https://i.giphy.com/media/hhgAbqQpm49vW/giphy.gif"
             style={{
               margin: "0 auto auto auto",
               maxHeight: "40vh",
