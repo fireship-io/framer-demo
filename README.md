@@ -1,5 +1,7 @@
 # Creating modals in React Framer Motion
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/78eb75d8-48e8-4356-b2d9-1247acc0e97a/deploy-status)](https://app.netlify.com/sites/react-framer-demo/deploys)
+
 1. [Features](#features-include)
 2. [Installation](#installation)
 3. [Set up](#set-up)
