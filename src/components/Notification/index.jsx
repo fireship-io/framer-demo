@@ -42,12 +42,12 @@ const Notification = ({ notifications, setNotifications, notification }) => {
     }
   };
 
-  const closeOnDrag = (event, info) => {
-    console.log(info)
-    if (info.velocity.x > 0) {
-      handleClose();
-    }
-  }
+//   const closeOnDrag = (event, info) => {
+//     console.log(info)
+//     if (info.velocity.x > 0) {
+//       handleClose();
+//     }
+//   }
 
   return (
     <motion.li
