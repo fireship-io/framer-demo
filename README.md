@@ -5,6 +5,7 @@
 1. [Features](#features-include)
 2. [Installation](#installation)
 3. [Set up](#set-up)
+4. [Live Demo](https://react-framer-demo.netlify.app)
 
 ## What is Framer Motion?
 
