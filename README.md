@@ -79,3 +79,5 @@ framer-demo
     ├── index.css
     └── index.js
 ```
+
+### want to see the [demo](https://react-framer-demo.netlify.app/)? 
