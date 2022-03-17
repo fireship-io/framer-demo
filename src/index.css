@@ -27,6 +27,7 @@ main {
   flex-direction: column;
   padding: 2rem;
   align-items: center;
+  overflow-y: hidden;
 }
 
 h1 {
