@@ -61,7 +61,8 @@ framer-demo
 │   ├── logo192.png
 │   ├── logo512.png
 │   ├── manifest.json
-│   └── robots.txt
+│   ├── robots.txt
+|   └── titleIcon.JPG
 └── src
     ├── hooks
     │   └── useModal.jsx
