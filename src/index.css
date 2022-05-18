@@ -18,7 +18,13 @@ body {
   background: var(--dark);
   font-family: "Montserrat", sans-serif;
   height: 100%;
-  overflow-y: hidden;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 main {
